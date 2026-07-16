@@ -1,0 +1,21 @@
+Finance mobile app ia created in figma. The first two pages have login details. Once the user logged in it show the total balance and transaction history. 
+There are 3 option
+1 budget
+2 add expense
+3 analysis
+
+Budget
+
+In budget frame it shoe total  amount spend in each expense. The amount alloted for each expense. It send user alert message.Each expenses have slide bar of colours blue,green and red to indicate how much amount spent by the user
+ The blue slide bar indicate the user have to slightly minimise the expense
+ The green slide bar indicates the user have to maintain the limit
+ The red slide bar indicate user have to minimise their expense.
+
+Add expense
+
+The user can add the expense in this screen. The user can upload the receipt in this page
+the user can also enter amount,select category and enter date and time of the expense
+
+Analysis
+
+In this analysis page the user  have detail  expense made on the each month in the form of bar chart. The  details of  upcoming renew also mention in this frame
