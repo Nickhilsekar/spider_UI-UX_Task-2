@@ -1,0 +1,58 @@
+%%html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Dhurjati&family=Irish+Grover&family=Noto+Sans+Lao+Condensed:wght@400;700&family=Noto+Sans+Malayalam:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { background-color: #000; display: flex; justify-content: center; align-items: center; min-height: 100vh; overflow: hidden; }
+        .phone-container { width: 360px; height: 640px; background-color: #cce0ff; border-radius: 20px; padding: 24px; display: flex; flex-direction: column; position: relative; }
+        .header { display: flex; align-items: center; gap: 12px; margin-bottom: 16px; }
+        .avatar-circle { width: 28px; height: 28px; background-color: #5f9ea0; border-radius: 50%; }
+
+        .header-text h1 { font-family: 'Noto Sans Malayalam', sans-serif; color: #000000; font-size: 18px; font-weight: bold; }
+        .header-text p { font-family: 'Noto Sans Malayalam', sans-serif; color: #000000; font-size: 10px; font-weight: bold; }
+
+        .balance-card { background-color: #1d4ed8; border-radius: 20px; padding: 16px 20px; border: 2px solid #1e3a8a; margin-bottom: 16px; font-family: 'Noto Sans Malayalam', sans-serif; }
+        .balance-card .title { color: #ffffff; font-size: 14px; font-weight: bold; }
+        .balance-card .amount { color: #ffffff; font-size: 24px; margin: 4px 0; font-weight: 900; }
+        .balance-card .trend { color: #ffffff; font-size: 12px; font-weight: bold; }
+
+        .spending-section h2 { font-family: 'ABeeZee', sans-serif; font-size: 16px; margin-bottom: 8px; color: #000000; font-weight: bold; }
+        .progress-bar { height: 10px; width: 100%; background: #0000ff; border: 1px solid #000; border-radius: 5px; position: relative; overflow: hidden; }
+        .progress-fill { height: 100%; width: 75%; background: #ff7e40; border-radius: 5px 0 0 5px; }
+
+        .breakdown-section { margin-top: 20px; }
+        .breakdown-section h3 { font-family: 'ABeeZee', sans-serif; font-size: 16px; margin-bottom: 12px; color: #000000; font-weight: bold; }
+
+        /* Removed border-bottom and adjusted padding */
+        .transaction-item { font-family: 'ABeeZee', sans-serif; font-size: 13px; margin-bottom: 10px; color: #000000; font-weight: 700; display: flex; justify-content: space-between; padding-bottom: 2px; }
+
+        .nav-bar { display: flex; gap: 8px; margin-top: auto; }
+        .nav-btn { color: #ffffff; border: none; padding: 12px; border-radius: 20px; cursor: pointer; flex: 1; text-align: center; font-weight: bold; text-decoration: none; font-size: 12px; }
+
+        .nav-btn.budget { font-family: 'Irish Grover', cursive; background-color: #1e3a8a; }
+        .nav-btn.expense { font-family: 'Dhurjati', sans-serif; background-color: #6d28d9; }
+        .nav-btn.analytics { font-family: 'Noto Sans Lao Condensed', sans-serif; background-color: #60a5fa; }
+    </style>
+</head>
+<body>
+    <div class="phone-container">
+        <div class="header"><div class="avatar-circle"></div><div class="header-text"><h1>FINANCIAL DASHBOARD</h1><p>WELCOME BACK USER</p></div></div>
+        <div class="balance-card"><div class="title">Total Current Balance</div><div class="amount">₹5,240.50</div><div class="trend">&uarr; +12.4% this month</div></div>
+        <div class="spending-section"><h2>Monthly Spending</h2><div class="progress-bar"><div class="progress-fill"></div></div></div>
+        <div class="breakdown-section">
+            <h3>Breakdown</h3>
+            <div class="transaction-item"><span>🍔 Local Burger</span><span>- ₹60</span></div>
+            <div class="transaction-item"><span>🏦 Salary Deposit</span><span style="color: #006400;">+ ₹2,500.00</span></div>
+            <div class="transaction-item"><span>🎬 Netflix Subscription</span><span>- ₹15.99</span></div>
+        </div>
+        <div class="nav-bar"><a href="budget.html" class="nav-btn budget">BUDGET</a><button class="nav-btn expense">+ EXPENSE</button><button class="nav-btn analytics">ANALYTICS</button></div>
+    </div>
+</body>
+</html>
